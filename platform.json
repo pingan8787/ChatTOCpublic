@@ -1,0 +1,22 @@
+{
+  "zai": {
+    "name": {
+      "zh": "Z.ai",
+      "en": "Z.ai"
+    },
+    "icon": "🤖",
+    "domains": ["chat.z.ai"],
+    "label": {
+      "zh": "Z.ai",
+      "en": "Z.ai"
+    },
+    "selectors": {
+      "container": "#messages-container, main, [role=\"main\"], #root",
+      "userItem": ".user-message",
+      "assistantItem": ".chat-assistant",
+      "textUser": ".rounded-xl, .chat-user",
+      "textAssistant": "p, .markdown-prose",
+      "exclude": "[class*='error'], [class*='Error']"
+    }
+  }
+}
