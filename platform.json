@@ -1,22 +1,24 @@
 {
-  "zai": {
-    "name": {
-      "zh": "Z.ai",
-      "en": "Z.ai"
-    },
-    "icon": "🤖",
-    "domains": ["chat.z.ai"],
-    "label": {
-      "zh": "Z.ai",
-      "en": "Z.ai"
-    },
-    "selectors": {
-      "container": "#messages-container, main, [role=\"main\"], #root",
-      "userItem": ".user-message",
-      "assistantItem": ".chat-assistant",
-      "textUser": ".rounded-xl, .chat-user",
-      "textAssistant": "p, .markdown-prose",
-      "exclude": "[class*='error'], [class*='Error']"
+    "anygen": {
+        "name": {
+            "zh": "AnyGen",
+            "en": "AnyGen"
+        },
+        "icon": "🤖",
+        "domains": [
+            "www.anygen.io"
+        ],
+        "label": {
+            "zh": "AnyGen",
+            "en": "AnyGen"
+        },
+        "selectors": {
+            "container": "main",
+            "userItem": "[data-role=\"user-bubble\"]",
+            "assistantItem": "[data-role=\"assistant-bubble\"]",
+            "textUser": "[data-role=\"user-bubble\"] [class*=\"userText-\"]",
+            "textAssistant": "[data-role=\"assistant-bubble\"] [class*=\"markdown-\"]",
+            "exclude": "[data-testid*='error']"
+        }
     }
-  }
 }
