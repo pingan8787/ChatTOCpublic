@@ -1,5 +1,6 @@
 {
     "anygen": {
+        "version": "0.0.1",
         "name": {
             "zh": "AnyGen",
             "en": "AnyGen"
@@ -19,6 +20,29 @@
             "textUser": "[data-role=\"user-bubble\"] [class*=\"userText-\"]",
             "textAssistant": "[data-role=\"assistant-bubble\"] [class*=\"markdown-\"]",
             "exclude": "[data-testid*='error']"
+        }
+    },
+    "PI": {
+        "version": "0.0.1",
+        "name": {
+            "zh": "PI",
+            "en": "PI"
+        },
+        "icon": "🤖",
+        "domains": [
+            "pi.ai"
+        ],
+        "label": {
+            "zh": "PI",
+            "en": "PI"
+        },
+        "selectors": {
+            "container": "div.t-body-chat",
+            "userItem": "div.group.flex:has(div.ml-auto)",
+            "assistantItem": "div.break-anywhere.flex.flex-col:not(:has(div.ml-auto))",
+            "textUser": "div.rounded-10",
+            "textAssistant": "div.whitespace-pre-wrap",
+            "exclude": "button, svg, .oracle-font, [aria-label]"
         }
     }
 }
