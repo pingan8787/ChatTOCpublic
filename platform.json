@@ -1,6 +1,6 @@
 {
     "anygen": {
-        "version": "0.0.1",
+        "version": "0.0.2",
         "name": {
             "zh": "AnyGen",
             "en": "AnyGen"
@@ -43,6 +43,29 @@
             "textUser": "div.rounded-10",
             "textAssistant": "div.whitespace-pre-wrap",
             "exclude": "button, svg, .oracle-font, [aria-label]"
+        }
+    },
+    "zaiwen": {
+        "version": "0.0.1",
+        "name": {
+            "zh": "在问",
+            "en": "ZaiWen"
+        },
+        "icon": "🤖",
+        "domains": [
+            "zaiwenai.com"
+        ],
+        "label": {
+            "zh": "在问",
+            "en": "ZaiWen"
+        },
+        "selectors": {
+            "container": "main section .message-box",
+            "userItem": ".message-list .message-box:nth-child(odd)",
+            "assistantItem": ".message-list .message-box:nth-child(even) .MdPreview",
+            "textUser": ".message-list .message-box .user-message .text-content p.text",
+            "textAssistant": ".MdPreview .md-editor-preview.md-editor-scrn",
+            "exclude": "[data-testid=\"message-warning\"], [class*=\"Error\"]"
         }
     }
 }
