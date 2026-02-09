@@ -46,14 +46,14 @@
         }
     },
     "zaiwen": {
-        "version": "0.0.1",
+        "version": "0.0.2",
         "name": {
             "zh": "在问",
             "en": "ZaiWen"
         },
         "icon": "🤖",
         "domains": [
-            "zaiwenai.com"
+            "https://www.zaiwenai.com/"
         ],
         "label": {
             "zh": "在问",
